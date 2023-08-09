@@ -1,0 +1,15 @@
+{
+  "ignore": [
+    "README.md",
+    ".gitignore"
+  ],
+  "commands": {
+    "Compile contracts": "cd truffle && truffle compile",
+    "Migrate contracts": "cd truffle && truffle migrate",
+    "Test contracts": "cd truffle && truffle test",
+    "Run dev server": "cd client && npm run dev"
+  },
+  "hooks": {
+    "post-unpack": "cd client && npm install && cd ../truffle && npm install"
+  }
+}
